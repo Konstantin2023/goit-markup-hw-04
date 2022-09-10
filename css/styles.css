@@ -420,6 +420,15 @@ color: var(--text-cl);
 
 }
 
+.envelope {
+  fill: #757575;
+}
+
+.envelope:hover,
+.envelope:focus {
+  fill:#2196f3;
+}
+
 .link-email:hover,
 .link-email:focus {
   color: var(--brand-color2);
