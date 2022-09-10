@@ -429,11 +429,18 @@ color: var(--text-cl);
   fill:#2196f3;
 }
 
+
+
 .link-email:hover,
 .link-email:focus {
   color: var(--brand-color2);
   cursor: pointer;
   text-decoration: none;
+}
+
+.link-email:hover .envelop,
+.link-email:focus .envelop {
+    color:#2196f3;
 }
 
 .link-tel {
