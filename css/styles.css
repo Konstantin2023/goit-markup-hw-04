@@ -567,7 +567,7 @@ letter-spacing: 0.03em;
 
 color: #757575;
 
-padding-bottom: 30px;
+margin-bottom: 16px;
 
 }
 .footer {
@@ -718,15 +718,30 @@ border-radius: 4px;
   display: flex;
   justify-content: center;
   gap: 30px;
-  fill: #afb1b8;
 }
 
-.box-clientage {
-  width: 170px;
+.client {
+  display: flex;
+      justify-content: center;
+  align-items: center;
+    width: 170px;
   height: 92px;
-  border-color: #afb1b8;
-  border: 1px solid #afb1b8;
+    border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.box-client {
+  display: flex;
+  fill: #afb1b8;
+
+justify-content: center;
+align-items: center;
+}
+
+.client:hover .box-client,
+.client:focus .box-client {
+  fill: #2196f3;
+border-color: #2196f3;
 }
 
 .toils {
@@ -734,19 +749,22 @@ border-radius: 4px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-
+padding-bottom: 30px;
 }
 
-.toils-instagram {
+.social-network {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   justify-content:center;
   align-items: center;
-  background-color: #2196f3;
+  fill: #afb1b8;
 }
 
-.toils-picture {
-display: block;
+.social-network:focus,
+.social-network:hover {
+  fill: #FFFFFF;
+background-color: #2196f3;
 }
+
