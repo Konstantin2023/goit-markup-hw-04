@@ -59,6 +59,12 @@ line-heigt: calc(30 / 18); */
   margin: 0 auto;
 }
 
+.below {
+  display: flex;
+  margin-top: 20px;
+  
+}
+
 button {
   background-color: var(--brand-color2);
   color: #ffffff;
@@ -280,7 +286,7 @@ text-align: center;
 max-width: 1600px;
 margin-left: auto;
 margin-right: auto;
-background-image: url(../images/Img.png);
+background-image: linear-gradient(to right, rgba(49, 48, 58, 0.4),rgba(49, 48, 58, 0.4)) url(../images/Img.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -417,7 +423,9 @@ color: var(--text-cl);
     letter-spacing: 0.02em;
 
     color: #757575;
-
+display: flex;
+gap: 10px;
+align-items: center;
 }
 
 .link-email:hover,
@@ -450,6 +458,8 @@ line-height: calc(16/14);
 letter-spacing: 0.02em;
 
 color: #757575;
+display: flex;
+gap: 10px;
 }
 
 .link-tel:hover,
@@ -720,27 +730,28 @@ border-radius: 4px;
   gap: 30px;
 }
 
-.client {
+.box-client {
   display: flex;
+  fill: currentColor;
+
+justify-content: center;
+align-items: center;
+}
+
+.blue {
+    display: flex;
       justify-content: center;
   align-items: center;
     width: 170px;
   height: 92px;
     border: 1px solid #afb1b8;
   border-radius: 4px;
+color:  #afb1b8;
 }
 
-.box-client {
-  display: flex;
-  fill: #afb1b8;
-
-justify-content: center;
-align-items: center;
-}
-
-.client:hover .box-client,
-.client:focus .box-client {
-  fill: #2196f3;
+.blue:hover,
+.blue:focus {
+  color: #2196f3;
 border-color: #2196f3;
 }
 
@@ -750,6 +761,12 @@ border-color: #2196f3;
   align-items: center;
   gap: 10px;
 padding-bottom: 30px;
+}
+
+.social {
+  margin-top: 12px;
+  margin-left: 70px;
+  margin-bottom: 40px;
 }
 
 .social-network {
@@ -768,3 +785,35 @@ padding-bottom: 30px;
 background-color: #2196f3;
 }
 
+.social-network-below {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content:center;
+  align-items: center;
+  fill: #FFFFFF;
+  background-color:rgba(255, 255, 255, 10%);
+}
+
+.social-network-below:focus,
+.social-network-below:hover {
+  fill: #FFFFFF;
+background-color: #2196f3;
+}
+
+.accession {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.below {
+  padding-bottom: 0;
+}
