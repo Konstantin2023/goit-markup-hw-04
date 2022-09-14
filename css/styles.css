@@ -806,6 +806,7 @@ line-height: calc(16/14);
 text-transform: uppercase;
 margin-bottom: 20px;
 color: var(--text-button-color);
+display: block;
 }
 
 .footer-container {
