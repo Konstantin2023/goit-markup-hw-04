@@ -11,8 +11,7 @@ h1, h2, h3, p, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+
 }
 /* HTML5 display-role reset for older browsers */
 ul {
@@ -124,9 +123,11 @@ address {
   font-style: normal;
 }
 body {
+  letter-spacing: 0.03em;
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  color: var(--text-cl);
 }
 /* Логотип */
 
@@ -182,8 +183,18 @@ header {
   border: 1px solid #ECECEC;
 }
 
-.project-team:hover,
+/* .project-team:hover,
 .project-team:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+} */
+
+.project-list-list {
+  text-decoration: none;
+  display: block;
+}
+
+.project-list-list:hover,
+.project-list-list:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
 }
 
@@ -429,6 +440,13 @@ align-items: center;
   text-decoration: none;
 }
 
+.link-email-2:hover,
+.link-email-2:focus {
+  color: var(--brand-color2);
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .envelope {
   fill:currentColor;
 }
@@ -458,6 +476,13 @@ gap: 10px;
 
 .link-tel:hover,
 .link-tel:focus {
+  color: var(--brand-color2);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-tel-2:hover,
+.link-tel-2:focus {
   color: var(--brand-color2);
   cursor: pointer;
   text-decoration: none;
@@ -501,24 +526,21 @@ margin-bottom: 30px;
 .list-acquirement {
   /* УВАГА ДО ДЕТАЛЕЙ */
 
-font-weight: 700;
+
 font-size: 14px;
 line-height: calc(16/14);
-letter-spacing: 0.03em;
+
 text-transform: uppercase;
 
-color: var(--text-cl);
+
 }
 
 .list-acquirement-text {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
+
 line-height: calc(24/14);
 /* or 171% */
 
-letter-spacing: 0.03em;
+
 
 color: var(--text-cl2);
 
@@ -528,15 +550,10 @@ margin-top: 10px;
 /* Чим ми займаємося */
 
 .section-title {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
+
 font-size: 36px;
 line-height: calc(42/36);
 text-align: center;
-letter-spacing: 0.03em;
-
-color: var(--text-cl);
 
 margin-bottom: 50px;
 }
@@ -548,23 +565,20 @@ line-height: calc(19/16);
 /* identical to box height */
 
 text-align: center;
-letter-spacing: 0.03em;
 
-color: var(--text-cl);
+
 
 padding-top: 30px;
 margin-bottom: 10px;
 }
 
 .profession {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
+
 font-size: 16px;
 line-height: calc(19/16);
 
 text-align: center;
-letter-spacing: 0.03em;
+
 
 color: var(--text-cl2);
 
@@ -583,14 +597,11 @@ margin-bottom: 9px;
 }
 
 .link-2 {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
+
 line-height: calc(24/14);
 /* or 171% */
 
-letter-spacing: 0.03em;
+
 
 color: var(--text-button-color);
 
@@ -606,14 +617,11 @@ margin-bottom: 9px;
 }
 
 .link-email-2 {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
+
 line-height: calc(24/14);
 
 
-letter-spacing: 0.03em;
+
 
 color: rgba(255, 255, 255, 0.6);
 
@@ -647,9 +655,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .project-title {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
+
 font-size: 18px;
 line-height: calc(36/18);
 
@@ -663,13 +669,10 @@ padding-left: 24px;
 }
 
 .project-text {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
+
 font-size: 16px;
 line-height: calc(30/16);
 
-letter-spacing: 0.03em;
 
 color: var(--text-cl2);
 
@@ -764,12 +767,16 @@ border-color: var(--brand-color2);
   border-radius: 50%;
   justify-content:center;
   align-items: center;
-  fill: #afb1b8;
+  color: #afb1b8;
+}
+
+.toils-picture {
+    fill: currentColor;
 }
 
 .social-network:focus,
 .social-network:hover {
-  fill: var(--text-button-color);
+  color: var(--text-button-color);
 background-color: var(--brand-color2);
 }
 
@@ -791,12 +798,11 @@ background-color: var(--brand-color2);
 }
 
 .accession {
-  font-family: 'Roboto';
-font-style: normal;
+
 font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
+
+line-height: calc(16/14);
+
 text-transform: uppercase;
 margin-bottom: 20px;
 color: var(--text-button-color);
